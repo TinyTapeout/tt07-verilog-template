@@ -76,3 +76,6 @@ set ::env(CLOCK_PORT) {clk}
 # Don't use power rings or met5 layer
 set ::env(DESIGN_IS_CORE) 0
 set ::env(RT_MAX_LAYER) {met4}
+
+# MAGIC_DEF_LABELS may cause issues with LVS
+set ::env(MAGIC_DEF_LABELS) 0
