@@ -26,6 +26,10 @@ set ::env(GLB_RESIZER_HOLD_SLACK_MARGIN) 0.05
 set ::env(RUN_LINTER) 1
 set ::env(LINTER_INCLUDE_PDK_MODELS) 1
 
+# If you need a custom clock configuration, read the following documentation first:
+# https://tinytapeout.com/faq/#how-can-i-map-an-additional-external-clock-to-one-of-the-gpios
+set ::env(CLOCK_PORT) {clk}
+
 # Configuration docs: https://openlane.readthedocs.io/en/latest/reference/configuration.html
 
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -71,7 +75,6 @@ set ::env(DECAP_CELL) "\
 
 # Clock
 set ::env(RUN_CTS) 1
-set ::env(CLOCK_PORT) {clk}
 
 # Don't use power rings or met5 layer
 set ::env(DESIGN_IS_CORE) 0
