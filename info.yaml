@@ -1,11 +1,11 @@
 # Tiny Tapeout project information
 project:
-  title:        ""      # Project title
-  author:       ""      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  title:        "clock"      # Project title
+  author:       "ender"      # Your name
+  discord:      "ender_64481"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "a clock usb digital tube"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     32768       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
@@ -20,24 +20,24 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+  ui[0]: "addr[0]"
+  ui[1]: "addr[1]"
+  ui[2]: "addr[2]"
+  ui[3]: "addr[3]"
+  ui[4]: "addr[4]"
+  ui[5]: "addr[5]"
+  ui[6]: "addr[6]"
+  ui[7]: "addr[7]"
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "data[0]"
+  uo[1]: "data[1]"
+  uo[2]: "data[2]"
+  uo[3]: "data[3]"
+  uo[4]: "data[4]"
+  uo[5]: "data[5]"
+  uo[6]: "data[6]"
+  uo[7]: "data[7]"
 
   # Bidirectional pins
   uio[0]: ""
